@@ -3040,7 +3040,8 @@ figcaption {
   }
 
   .display-4 {
-    font-family: Source Sans Pro, sans-serif;
+    font-size: 24px;
+    line-height: 1.3;
   }
 
   .card-container {
@@ -3150,11 +3151,11 @@ figcaption {
   }
 
   .paragraph-1 {
-    font-family: Source Sans Pro, sans-serif;
     font-size: 20px;
   }
 
   .paragraph-1.second {
+    font-family: Satoshi, sans-serif;
     font-size: 20px;
   }
 
@@ -3173,9 +3174,7 @@ figcaption {
   }
 
   .hero-display._1 {
-    font-family: Source Sans Pro, sans-serif;
     font-size: 24vw;
-    font-weight: 600;
     display: block;
   }
 
@@ -3196,13 +3195,25 @@ figcaption {
     font-size: 18vw;
   }
 
+  .hero-display._1.home {
+    line-height: 1.1;
+  }
+
   .hero-display._2 {
     font-size: 24vw;
   }
 
+  .hero-display._2.home {
+    line-height: 1.1;
+  }
+
   .hero-display._3 {
-    font-size: 24vw;
-    font-weight: 600;
+    font-size: 23vw;
+    line-height: 1.1;
+  }
+
+  .hero-display._3.home {
+    line-height: 1.2;
   }
 
   .part-2 {
@@ -3261,10 +3272,6 @@ figcaption {
     margin-top: 20px;
   }
 
-  .project-title {
-    font-family: Source Sans Pro, sans-serif;
-  }
-
   .slide-content {
     margin-left: 4px;
     margin-right: 4px;
@@ -3286,9 +3293,7 @@ figcaption {
   }
 
   .quote-text._2 {
-    font-family: Source Sans Pro, sans-serif;
     font-size: 17px;
-    line-height: 20px;
   }
 
   .slide-nav {
@@ -3303,6 +3308,10 @@ figcaption {
     max-width: 300px;
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .testimonials-name {
+    line-height: 26px;
   }
 
   .max-width._4.vertical {
