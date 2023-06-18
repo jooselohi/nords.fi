@@ -3199,6 +3199,10 @@ figcaption {
     line-height: 1.1;
   }
 
+  .hero-display._1.hinnasto {
+    font-size: 22vw;
+  }
+
   .hero-display._2 {
     font-size: 24vw;
   }
