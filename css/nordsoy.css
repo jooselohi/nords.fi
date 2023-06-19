@@ -3178,6 +3178,10 @@ figcaption {
     display: block;
   }
 
+  .hero-display._1.left-align.contact {
+    line-height: 1.1;
+  }
+
   .hero-display._1.mobileshow {
     display: block;
   }
