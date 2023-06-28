@@ -29,14 +29,4 @@
         <priority>0.80</priority>
         <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/ota-yhteytta"/>
     </url>
-    <url>
-        <loc>https://www.nords.fi/palveluehdot</loc>
-        <priority>0.80</priority>
-        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/palveluehdot"/>
-    </url>
-    <url>
-        <loc>https://www.nords.fi/tietosuojaseloste</loc>
-        <priority>0.80</priority>
-        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/tietosuojaseloste"/>
-    </url>
 </urlset>
