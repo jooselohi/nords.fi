@@ -527,7 +527,6 @@ figcaption {
   align-items: center;
   margin-bottom: 15px;
   padding: 15px 25px;
-  font-family: Source Sans Pro, sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.4;
@@ -1489,6 +1488,7 @@ figcaption {
 }
 
 .star-image {
+  filter: grayscale();
   margin-right: 1px;
 }
 
