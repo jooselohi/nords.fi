@@ -21,51 +21,6 @@
   display: grid;
 }
 
-.w-checkbox {
-  margin-bottom: 5px;
-  padding-left: 20px;
-  display: block;
-}
-
-.w-checkbox:before {
-  content: " ";
-  grid-area: 1 / 1 / 2 / 2;
-  display: table;
-}
-
-.w-checkbox:after {
-  content: " ";
-  clear: both;
-  grid-area: 1 / 1 / 2 / 2;
-  display: table;
-}
-
-.w-checkbox-input {
-  float: left;
-  margin: 4px 0 0 -20px;
-  line-height: normal;
-}
-
-.w-checkbox-input--inputType-custom {
-  border: 1px solid #ccc;
-  border-radius: 2px;
-  width: 12px;
-  height: 12px;
-}
-
-.w-checkbox-input--inputType-custom.w--redirected-checked {
-  background-color: #3898ec;
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg');
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-color: #3898ec;
-}
-
-.w-checkbox-input--inputType-custom.w--redirected-focus {
-  box-shadow: 0 0 3px 1px #3898ec;
-}
-
 body {
   color: var(--black);
   background-color: #fff;
@@ -4000,14 +3955,6 @@ figcaption {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
-#w-node-_10a00774-66ed-66e1-8858-a5eae0aa0d2c-ded60735 {
-  align-self: start;
-}
-
-#w-node-_1d875b11-be0a-beb5-a8c7-4ca84eaaa39b-ded60735, #w-node-_46f47872-3b81-009b-cd21-4d04d66dd5b6-ded60735 {
-  grid-area: span 1 / span 2 / span 1 / span 2;
-}
-
 #w-node-_3732fbad-a8b8-eb4e-d4ef-e9633d15589a-ded60736 {
   align-self: end;
   justify-self: start;
@@ -4142,18 +4089,6 @@ figcaption {
 
   #w-node-_09e4c470-1338-4427-fba8-2bfaa9deeffb-ded60716, #w-node-_4a51c5c5-7d7f-022e-2d5a-540991330773-ded60716, #w-node-d86904fa-4b3b-ad2c-473e-be211d0003e5-ded60716, #w-node-_09e4c470-1338-4427-fba8-2bfaa9deefff-ded60716, #w-node-cb6733dc-e3d2-ae7b-0fbb-ff21187d654b-ded60716, #w-node-f116de5f-c530-f764-761e-1fcba1a1ec3c-ded60716, #w-node-_0de12999-898c-a471-a570-22151820821a-ded60716, #w-node-_3984bc94-4b12-d6c0-73a9-15b35f575850-ded60716, #w-node-_1601bf22-bd18-71f2-4e8a-0539627ff1db-ded60721, #w-node-_1601bf22-bd18-71f2-4e8a-0539627ff1e8-ded60721, #w-node-_1601bf22-bd18-71f2-4e8a-0539627ff1f5-ded60721 {
     grid-area: span 1 / span 2 / span 1 / span 2;
-  }
-
-  #w-node-_1d875b11-be0a-beb5-a8c7-4ca84eaaa393-ded60735 {
-    grid-area: 1 / 1 / 2 / 3;
-  }
-
-  #w-node-_1d875b11-be0a-beb5-a8c7-4ca84eaaa39b-ded60735 {
-    grid-area: 2 / 1 / 3 / 3;
-  }
-
-  #w-node-_46f47872-3b81-009b-cd21-4d04d66dd5b6-ded60735 {
-    grid-area: 3 / 1 / 4 / 3;
   }
 }
 
