@@ -1,32 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
         <loc>https://www.nords.fi/</loc>
         <priority>1.00</priority>
-        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/"/>
+        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/" />
     </url>
     <url>
         <loc>https://www.nords.fi/palvelut</loc>
         <priority>0.80</priority>
-        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/palvelut"/>
+        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/palvelut" />
     </url>
     <url>
         <loc>https://www.nords.fi/hinnasto</loc>
         <priority>0.80</priority>
-        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/hinnasto"/>
-    </url>
-    <url>
-        <loc>https://www.nords.fi/referenssit</loc>
-        <priority>0.80</priority>
-        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/referenssit"/>
+        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/hinnasto" />
     </url>
     <url>
         <loc>https://www.nords.fi/ota-yhteytta</loc>
         <priority>0.80</priority>
-        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/ota-yhteytta"/>
+        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/ota-yhteytta" />
     </url>
 </urlset>
