@@ -1,0 +1,233 @@
+<!DOCTYPE html><!--  Last Published: Sat Jun 08 2024 14:36:19 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="66646029df458af1df30843a" data-wf-site="664df11d3916b1a4e878c205" lang="fi">
+<head>
+  <meta charset="utf-8">
+  <title>Mitä ovat DNS-tietueet?</title>
+  <meta content="Mitä ovat DNS-tietueet?" property="og:title">
+  <meta content="Mitä ovat DNS-tietueet?" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../css/components.css" rel="stylesheet" type="text/css">
+  <link href="../css/nords-k7i7y.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic","Roboto:300,regular,500,700,900","Playfair Display:regular,500,600,700,800,900","Raleway:300,regular,500,600,700,800,900","Inter:regular,500"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="../images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="../images/webclip.jpg" rel="apple-touch-icon">
+  <link href="https://www.nords.fi/blogi/mita-ovat-dns-tietueet" rel="canonical">
+</head>
+<body>
+  <header>
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+      <div class="w-layout-blockcontainer nav-container w-container">
+        <a href="https://www.nords.fi" class="brand w-nav-brand"><img src="../images/Nords.png" loading="lazy" sizes="(max-width: 479px) 125px, 135px" srcset="../images/Nords-p-500.png 500w, ../images/Nords-p-800.png 800w, ../images/Nords-p-1080.png 1080w, ../images/Nords-p-1600.png 1600w, ../images/Nords-p-2000.png 2000w, ../images/Nords-p-2600.png 2600w, ../images/Nords-p-3200.png 3200w, ../images/Nords.png 5954w" alt="Nords Oy logo" class="logo-image"></a>
+        <nav role="navigation" class="nav-menu w-nav-menu">
+          <a href="https://www.nords.fi" class="nav-link w-nav-link">Koti</a>
+          <a href="../tiimi" class="nav-link w-nav-link">Tiimi</a>
+          <a href="../hinnasto" class="nav-link w-nav-link">Hinnasto</a>
+          <a href="../tyot" class="nav-link w-nav-link">Työt</a>
+          <a href="../blogi" class="nav-link w-nav-link">Blogi</a>
+          <a href="../ota-yhteytta" class="nav-link last w-nav-link">Ota yhteyttä</a>
+        </nav>
+        <div class="menu-button w-nav-button"></div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section top">
+      <div class="w-layout-blockcontainer container w-container">
+        <div data-w-id="af35b959-30fd-0d0f-637c-31bf17acc175" style="opacity:0;-webkit-transform:translate3d(null, 10vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 10vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 10vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 10vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="_80-px-bottom-margin-div">
+          <div class="_30-px-bottom-margin-div">
+            <a href="#" class="big-category-link w-inline-block">
+              <div class="category-text">04/2024</div>
+            </a>
+          </div>
+          <h1 class="h1 billing-address-toggle">Mitä ovat DNS-tietueet?</h1>
+        </div>
+        <div data-w-id="af35b959-30fd-0d0f-637c-31bf17acc17c" style="opacity:0;-webkit-transform:translate3d(null, 10vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(null, 10vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(null, 10vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(null, 10vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)">
+          <div class="top-div-image"><img src="../images/macbook-finder.webp" loading="lazy" alt="" class="template-image">
+            <div class="wrap-company-icon large"><img src="../images/cpanel-logo.png" loading="lazy" alt="cPanel logo" class="icon-company-logo large"></div>
+          </div>
+          <div class="blog-rich-div">
+            <div class="blog-rich-text-block w-richtext">
+              <p>Domain Name System (DNS) on olennainen osa internetin infrastruktuuria. Se toimii ikään kuin internetin puhelinluettelona, joka muuntaa ihmisten helposti muistamat verkkotunnukset (kuten <a target="_new" href="http://www.esimerkki.fi">www.esimerkki.fi</a>) IP-osoitteiksi (kuten 192.0.2.1), joita tietokoneet käyttävät kommunikoidakseen keskenään. DNS-tietueet ovat tämän järjestelmän perusyksiköitä, jotka määrittävät, miten eri verkkotunnusten ja niiden osien tulee toimia. Tässä blogissa tutustumme DNS-tietueiden perusteisiin ja yleisimpiin tyyppeihin.</p>
+              <h2>DNS-tietueiden perusteet</h2>
+              <p>DNS-tietueet tallennetaan DNS-palvelimiin ja ne sisältävät tietoja verkkotunnuksesta ja siihen liittyvistä resursseista. Jokainen DNS-tietue koostuu useista osista:</p>
+              <ul role="list">
+                <li><strong>Nimi</strong>: Verkkotunnus tai aliverkkotunnus, jota tietue koskee.</li>
+                <li><strong>TTL (Time to Live)</strong>: Aika sekunneissa, jonka tietueen tiedot ovat välimuistissa ennen niiden vanhenemista ja päivitystä.</li>
+                <li><strong>Tyyppi</strong>: Tietueen tyyppi, joka määrittää, millaista tietoa tietue sisältää.</li>
+                <li><strong>Arvo</strong>: Tietueen sisältö, joka vaihtelee tietuetyypin mukaan.</li>
+              </ul>
+              <h2>Yleisimpiä DNS-tietueiden tyyppejä</h2>
+              <h3>1. A-tietue (Address Record)</h3>
+              <p>A-tietue on ehkä tunnetuin DNS-tietue. Se yhdistää verkkotunnuksen tai aliverkkotunnuksen IPv4-osoitteeseen. Esimerkiksi:</p>
+              <p><code>example.com.  3600  IN  A  192.0.2.1<br></code></p>
+              <p>Tässä tietueessa <code>example.com</code> yhdistetään IP-osoitteeseen <code>192.0.2.1</code> ja tietueen TTL on 3600 sekuntia.</p>
+              <h3>2. AAAA-tietue (IPv6 Address Record)</h3>
+              <p>AAAA-tietue on vastaava kuin A-tietue, mutta se yhdistää verkkotunnuksen IPv6-osoitteeseen. Esimerkiksi:</p>
+              <p><code>example.com.  3600  IN  AAAA  2001:0db8:85a3:0000:0000:8a2e:0370:7334<br></code></p>
+              <p>Tässä tietueessa <code>example.com</code> yhdistetään IPv6-osoitteeseen <code>2001:0db8:85a3:0000:0000:8a2e:0370:7334</code>.</p>
+              <h3>3. CNAME-tietue (Canonical Name Record)</h3>
+              <p>CNAME-tietue yhdistää yhden verkkotunnuksen toiseen verkkotunnukseen. Tämä on hyödyllistä, kun halutaan ohjata useita aliverkkotunnuksia samaan IP-osoitteeseen. Esimerkiksi:</p>
+              <p><code>www.example.com.  3600  IN  CNAME  example.com.<br></code></p>
+              <p>Tässä tietueessa <code>www.example.com</code> ohjataan <code>example.com</code>-verkkotunnukseen.</p>
+              <h3>4. MX-tietue (Mail Exchange Record)</h3>
+              <p>MX-tietue määrittää sähköpostipalvelimet, jotka käsittelevät verkkotunnuksen sähköpostit. Esimerkiksi:</p>
+              <p><code>example.com.  3600  IN  MX  10 mail.example.com.<br></code></p>
+              <p>Tässä tietueessa <code>example.com</code>-verkkotunnuksen sähköpostit käsittelee <code>mail.example.com</code>, jonka prioriteetti on 10.</p>
+              <h3>5. TXT-tietue (Text Record)</h3>
+              <p>TXT-tietue sisältää tekstimuotoista tietoa, jota voidaan käyttää erilaisiin tarkoituksiin, kuten vahvistamaan verkkotunnuksen omistajuus. Esimerkiksi:</p>
+              <p><code>example.com.  3600  IN  TXT  &quot;v=spf1 include:_spf.example.com ~all&quot;<br></code></p>
+              <p>Tässä tietueessa <code>example.com</code>-verkkotunnus sisältää SPF-tietoja, jotka auttavat torjumaan roskapostia.</p>
+              <h3>6. NS-tietue (Name Server Record)</h3>
+              <p>NS-tietue määrittää, mitkä nimipalvelimet ovat vastuussa verkkotunnuksesta. Esimerkiksi:</p>
+              <p><code>example.com.  3600  IN  NS  ns1.example.com.<br>example.com.  3600  IN  NS  ns2.example.com.<br></code></p>
+              <p>Tässä tietueessa <code>example.com</code>-verkkotunnuksella on kaksi nimipalvelinta: <code>ns1.example.com</code> ja <code>ns2.example.com</code>.</p>
+              <h2>Miksi DNS-tietueet ovat tärkeitä?</h2>
+              <p>DNS-tietueet ovat keskeinen osa internetin toimintaa, sillä ne mahdollistavat verkkotunnusten kääntämisen IP-osoitteiksi, mikä on välttämätöntä verkkosivustojen selaamiselle, sähköpostien lähettämiselle ja monille muille verkkopalveluille. Ilman DNS-tietueita internet olisi paljon monimutkaisempi ja vaikeammin käytettävä paikka.</p>
+              <h2>Yhteenveto</h2>
+              <p>DNS-tietueet ovat olennainen osa internetin toimivuutta. Ne tarjoavat mekanismin, jonka avulla verkkotunnukset voidaan yhdistää IP-osoitteisiin ja muihin resursseihin. Ymmärtämällä eri DNS-tietueiden tyypit ja niiden käyttötarkoitukset voi parantaa verkkosivustojen hallintaa ja vianmääritystä. Toivottavasti tämä blogi on auttanut sinua ymmärtämään, mitä DNS-tietueet ovat ja miksi ne ovat niin tärkeitä!</p>
+              <p>‍</p>
+            </div>
+            <div class="space _42"></div>
+            <div class="author-flex"><img src="../images/Joose_Lohi.jpeg" loading="lazy" alt="Joose Lohi" sizes="64px" srcset="../images/Joose_Lohi-p-500.jpg 500w, ../images/Joose_Lohi-p-800.jpg 800w, ../images/Joose_Lohi-p-1080.jpg 1080w, ../images/Joose_Lohi.jpeg 1558w" class="author-image">
+              <div>
+                <div class="author-text-block">Joose Lohi</div>
+                <div class="author-metatext-block">Nords Oy</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="w-layout-blockcontainer container w-container">
+      <div>
+        <div class="w-layout-grid _2-column-grid">
+          <div id="w-node-_32916864-5b97-4e76-4e51-035006162223-0616221f" class="flex-content-footer">
+            <div id="w-node-_32916864-5b97-4e76-4e51-035006162224-0616221f" class="footer-box">
+              <div class="footer-title">Navigoi</div>
+              <ul role="list" class="footer-links-wrapper w-list-unstyled">
+                <li class="footer-link-item">
+                  <a href="https://www.nords.fi" class="footer-link">Koti</a>
+                </li>
+                <li class="footer-link-item">
+                  <a href="../tiimi" class="footer-link">Tiimi</a>
+                </li>
+                <li class="footer-link-item">
+                  <a href="../hinnasto" class="footer-link">Hinnasto</a>
+                </li>
+                <li class="footer-link-item">
+                  <a href="../tyot" class="footer-link">Työt</a>
+                </li>
+                <li class="footer-link-item">
+                  <a href="../blogi" class="footer-link">Blogi</a>
+                </li>
+                <li class="footer-link-item">
+                  <a href="../ota-yhteytta" class="footer-link">Ota yhteyttä</a>
+                </li>
+                <li class="footer-link-item">
+                  <a href="../tietosuojaseloste" class="footer-link">Tietosuojaseloste</a>
+                </li>
+                <li class="footer-link-item">
+                  <a href="../palveluehdot" class="footer-link">Palveluehdot</a>
+                </li>
+              </ul>
+            </div>
+            <div id="w-node-_32916864-5b97-4e76-4e51-035006162234-0616221f" class="footer-box">
+              <div class="footer-title">Nords Oy</div>
+              <ul role="list" class="footer-links-wrapper w-list-unstyled">
+                <li class="footer-link-item">
+                  <a href="tel:+358449819623" class="footer-link">044 981 9623</a>
+                </li>
+                <li class="footer-link-item">
+                  <a href="mailto:eeli@nords.fi" class="footer-link">eeli@nords.fi</a>
+                </li>
+                <li class="footer-link-item">
+                  <a href="https://www.kauppalehti.fi/yritykset/yritys/nords+oy/33257478" target="_blank" class="footer-link">Y-tunnus: 3325747-8</a>
+                </li>
+                <li class="footer-link-item">
+                  <a href="https://www.linkedin.com/company/nords-oy/" target="_blank" class="footer-link">LinkedIn</a>
+                </li>
+                <li class="footer-link-item">
+                  <a href="https://wa.me/358449819623" target="_blank" class="footer-link">WhatsApp</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="w-node-_32916864-5b97-4e76-4e51-035006162242-0616221f">
+            <div id="w-node-_32916864-5b97-4e76-4e51-035006162243-0616221f" class="newsletter-wrapper">
+              <div class="footer-title">Jätä soittopyyntö!</div>
+              <div class="w-form">
+                <form id="wf-form-Soittopyynt-lomake" name="wf-form-Soittopyynt-lomake" data-name="Soittopyyntölomake" method="get" class="form" data-wf-page-id="66646029df458af1df30843a" data-wf-element-id="32916864-5b97-4e76-4e51-035006162247">
+                  <div>
+                    <div class="w-layout-grid subscribe-grid"><input class="newsletter-text w-node-c7eac8ea-f1ab-9277-034c-2b91ffbbffa4-0616221f w-input" maxlength="256" name="Soittopyynto" data-name="Soittopyynto" placeholder="Puhelinnumero" type="text" id="Soittopyynto" required="">
+                      <div id="w-node-_32916864-5b97-4e76-4e51-03500616224b-0616221f" class="flex-button-div"><input type="submit" data-wait="Odota hetki..." class="submit-button w-button" value="Lähetä"></div>
+                    </div>
+                  </div>
+                </form>
+                <div class="success-message w-form-done">
+                  <div>Thank you! Your submission has been received!</div>
+                </div>
+                <div class="w-form-fail">
+                  <div>Oops! Something went wrong while submitting the form.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="center-bottom-flex">
+        <div class="footer-bottom">
+          <div class="footer-bottom-text">© Nords Oy 2024.</div>
+        </div>
+        <div class="footer-bottom-right">
+          <div class="footer-bottom-text">Digitoimisto, joka välittää.</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <aside class="whatsapp-block">
+    <div class="whatsapp-chat">
+      <div class="top-section">
+        <div class="profile-wrapper">
+          <div class="profile-image-wrapper"><img src="../images/Eeli.webp" loading="lazy" sizes="(max-width: 1919px) 47px, 100vw" srcset="../images/Eeli-p-500.webp 500w, ../images/Eeli.webp 640w" alt="Eeli Lohi" class="live-icon-chat">
+            <div class="live-icon profile-image"></div>
+          </div>
+          <div class="top-text-container">
+            <div class="live-chat-top-text">Eeli Lohi</div>
+            <div class="live-chat-bottom-text">Nords Oy</div>
+          </div>
+        </div>
+        <div id="close-chat" class="close-live-chat-container"><img src="../images/Sulje.svg" loading="lazy" alt="Sulje ikoni" class="close-livechat-icon"></div>
+      </div>
+      <div class="chat-section">
+        <div class="chat-block">
+          <div class="live-chat-top-text block">Eeli Lohi</div>
+          <div class="live-chat-bottom-text block">Hei! 👋 Voinko olla avuksi?</div>
+        </div>
+      </div>
+      <a href="https://wa.me/358449819623" target="_blank" class="live-chat-link w-inline-block">
+        <div class="livechat-button"><img src="../images/WhatsApp_Pieni.svg" loading="lazy" alt="Pieni WhatsApp logo" class="small-whatsapp-icon">
+          <div class="live-chat-text">Aloita keskustelu</div>
+        </div>
+      </a>
+    </div>
+    <div id="whatsapp-button" data-w-id="6c2a8bf8-f02f-91d5-90d0-45e31e33e0c2" class="whatsapp-container"><img src="../images/WhatsApp.svg" loading="lazy" alt="WhatsApp logo" class="whatsapp-icon">
+      <div class="live-icon"></div>
+    </div>
+  </aside>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=664df11d3916b1a4e878c205" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="../js/nords-k7i7y.js" type="text/javascript"></script>
+  <script>
+$(document).on('click', '#close-chat', function(event) { 
+    event.preventDefault(); 
+    $("#whatsapp-button").click(); 
+});
+</script>
+</body>
+</html>
