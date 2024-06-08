@@ -7,20 +7,48 @@
         <loc>https://www.nords.fi/</loc>
         <priority>1.00</priority>
         <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/" />
+        <changefreq>monthly</changefreq>
     </url>
     <url>
-        <loc>https://www.nords.fi/palvelut</loc>
+        <loc>https://www.nords.fi/tiimi</loc>
         <priority>0.80</priority>
-        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/palvelut" />
+        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/tiimi" />
+        <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://www.nords.fi/hinnasto</loc>
         <priority>0.80</priority>
         <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/hinnasto" />
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.nords.fi/tyot</loc>
+        <priority>0.80</priority>
+        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/tyot" />
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.nords.fi/blogi</loc>
+        <priority>0.80</priority>
+        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/blogi" />
+        <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://www.nords.fi/ota-yhteytta</loc>
         <priority>0.80</priority>
         <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/ota-yhteytta" />
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.nords.fi/tietosuojaseloste</loc>
+        <priority>0.60</priority>
+        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/tietosuojaseloste" />
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>https://www.nords.fi/palveluehdot</loc>
+        <priority>0.60</priority>
+        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/palveluehdot" />
+        <changefreq>yearly</changefreq>
     </url>
 </urlset>
