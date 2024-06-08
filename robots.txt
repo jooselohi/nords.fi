@@ -1,13 +1,8 @@
 User-agent: *
 Disallow: /401.html
 Disallow: /404.html
-Disallow: /docs.html
-Disallow: /kiitos.html
 Disallow: /kotisivut-kysely.html
-Disallow: /palaute.html
-Disallow: /palveluehdot.html
-Disallow: /referenssi/
-Disallow: /tietosuojaseloste.html
+Disallow: /kysely.html
 
 # Exclude paginated URLs to prevent duplicate content indexing
 Disallow: /*?page=
