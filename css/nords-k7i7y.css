@@ -2496,6 +2496,77 @@ strong {
   font-size: 16px;
 }
 
+.btn-bg {
+  background-color: #5b96fe;
+  border-radius: 100%;
+  width: 120%;
+  min-width: 5rem;
+  height: 175%;
+  display: block;
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+}
+
+.btn-bg.c-18 {
+  background-color: rgba(255, 255, 255, .15);
+  border-radius: 0%;
+  width: 100%;
+  min-width: auto;
+  height: 100%;
+}
+
+.button-3 {
+  color: #040126;
+  text-align: center;
+  letter-spacing: -.03rem;
+  background-color: #9adbff;
+  padding: .75rem 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  overflow: visible;
+}
+
+.button-3.d-09 {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: linear-gradient(20deg, #1d4ea5, #5b96fe);
+  border-radius: 50rem;
+  transition: box-shadow .3s;
+  box-shadow: 0 7px 80px -12px #5b96fe, inset 0 0 #040126;
+}
+
+.button-3.d-09:hover {
+  background-color: #5b96fe;
+  box-shadow: 0 0 0 -12px #5b96fe, inset 0 -60px 40px #4932dd;
+}
+
+.button-4 {
+  color: #040126;
+  text-align: center;
+  letter-spacing: -.03rem;
+  background-color: #9adbff;
+  padding: .75rem 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  overflow: visible;
+}
+
+.button-4.d-12 {
+  background-color: #d8fafe;
+  border-radius: 50rem;
+  transition: transform .3s, box-shadow .3s;
+  box-shadow: -4px 4px #5b96fe;
+}
+
+.button-4.d-12:hover {
+  background-color: #d8fafe;
+  transform: translate(0, 3px);
+  box-shadow: 0 0 #5b96fe;
+}
+
 @media screen and (min-width: 1280px) {
   .view-icon-circle {
     color: #fff;
@@ -4228,6 +4299,13 @@ strong {
 }
 
 
+@font-face {
+  font-family: 'Gambetta Variable';
+  src: url('../fonts/Gambetta-Variable.ttf') format('truetype');
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
 @font-face {
   font-family: 'Circularstd';
   src: url('../fonts/CircularStd-BookItalic.otf') format('opentype');
