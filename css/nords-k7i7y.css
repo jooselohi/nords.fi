@@ -2567,6 +2567,23 @@ strong {
   box-shadow: 0 0 #5b96fe;
 }
 
+.hero-button-flex {
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  display: flex;
+}
+
+.div-block-2 {
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 20px;
+  display: flex;
+}
+
 @media screen and (min-width: 1280px) {
   .view-icon-circle {
     color: #fff;
@@ -4167,6 +4184,14 @@ strong {
 
   .pricing_number-wrap {
     background-color: rgba(44, 44, 44, 0);
+  }
+
+  .hero-button-flex {
+    grid-column-gap: 42px;
+    grid-row-gap: 42px;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
 
