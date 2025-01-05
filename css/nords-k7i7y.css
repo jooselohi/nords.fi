@@ -1400,6 +1400,10 @@ strong {
   padding-left: 30px;
 }
 
+.center-flex-div._40px-margin-bottom {
+  margin-bottom: 40px;
+}
+
 .middle-project-grid {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
@@ -2554,6 +2558,72 @@ strong {
   align-items: flex-start;
   margin-top: 20px;
   display: flex;
+}
+
+.toggle-content {
+  overflow: hidden;
+}
+
+.faq-title {
+  line-height: 1.3;
+}
+
+.faq-paragraph {
+  line-height: 1.4;
+}
+
+.toogle-max-w {
+  max-width: 657px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.toggle-wrapper {
+  text-align: left;
+  margin-top: -1px;
+}
+
+.line-1 {
+  background-color: #000;
+  width: 100%;
+  height: 1px;
+}
+
+.toggle-header {
+  color: #000;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 25px 0;
+  font-size: 21px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all .4s;
+  display: flex;
+}
+
+.toogle-icon {
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  margin-right: 14px;
+  display: flex;
+  position: relative;
+}
+
+.toggle-space {
+  padding: 15px 0;
+}
+
+.line-2 {
+  background-color: #000;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  transform: rotate(90deg);
 }
 
 @media screen and (min-width: 1280px) {
@@ -4100,6 +4170,18 @@ strong {
     flex-flow: column;
     justify-content: flex-start;
     align-items: flex-start;
+  }
+
+  .toggle-header {
+    line-height: 24px;
+  }
+
+  .toogle-icon {
+    flex: none;
+  }
+
+  .toggle-space {
+    padding-right: 0;
   }
 }
 
