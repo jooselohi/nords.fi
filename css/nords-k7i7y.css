@@ -639,8 +639,8 @@ strong {
 
 .center-bottom-flex {
   justify-content: space-between;
-  align-items: center;
-  padding-top: 60px;
+  align-items: flex-end;
+  padding-top: 10px;
   line-height: 16px;
   display: flex;
 }
@@ -2623,6 +2623,18 @@ strong {
   height: 1px;
   position: absolute;
   transform: rotate(90deg);
+}
+
+.certificate-wrapper {
+  grid-column-gap: 42px;
+  grid-row-gap: 42px;
+  align-items: center;
+  display: flex;
+}
+
+.image {
+  object-fit: contain;
+  width: 120px;
 }
 
 @media screen and (min-width: 1280px) {
