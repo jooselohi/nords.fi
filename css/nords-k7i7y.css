@@ -2953,6 +2953,10 @@ strong {
   color: var(--white);
 }
 
+.whatsapp-image {
+  display: none;
+}
+
 @media screen and (min-width: 1280px) {
   .view-icon-circle {
     color: #fff;
