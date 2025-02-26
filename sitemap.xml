@@ -1,54 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-    xmlns:xhtml="http://www.w3.org/1999/xhtml"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-    <url>
-        <loc>https://www.nords.fi/</loc>
-        <priority>1.00</priority>
-        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/" />
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>https://www.nords.fi/tiimi</loc>
-        <priority>0.80</priority>
-        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/tiimi" />
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>https://www.nords.fi/hinnasto</loc>
-        <priority>0.80</priority>
-        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/hinnasto" />
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>https://www.nords.fi/tyot</loc>
-        <priority>0.80</priority>
-        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/tyot" />
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>https://www.nords.fi/blogi</loc>
-        <priority>0.80</priority>
-        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/blogi" />
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>https://www.nords.fi/ota-yhteytta</loc>
-        <priority>0.80</priority>
-        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/ota-yhteytta" />
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>https://www.nords.fi/tietosuojaseloste</loc>
-        <priority>0.60</priority>
-        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/tietosuojaseloste" />
-        <changefreq>yearly</changefreq>
-    </url>
-    <url>
-        <loc>https://www.nords.fi/palveluehdot</loc>
-        <priority>0.60</priority>
-        <xhtml:link rel="alternate" hreflang="fi" href="https://www.nords.fi/palveluehdot" />
-        <changefreq>yearly</changefreq>
-    </url>
-</urlset>
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:urlset xmlns:html="http://www.w3.org/1999/xhtml" xmlns:ns0="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <ns0:url>
+        <ns0:loc>https://www.nords.fi/</ns0:loc>
+        <ns0:priority>1.00</ns0:priority>
+        <html:link rel="alternate" hreflang="fi" href="https://www.nords.fi/" />
+        <ns0:changefreq>monthly</ns0:changefreq>
+    </ns0:url>
+    <ns0:url>
+        <ns0:loc>https://www.nords.fi/tiimi</ns0:loc>
+        <ns0:priority>0.80</ns0:priority>
+        <html:link rel="alternate" hreflang="fi" href="https://www.nords.fi/tiimi" />
+        <ns0:changefreq>monthly</ns0:changefreq>
+    </ns0:url>
+    <ns0:url>
+        <ns0:loc>https://www.nords.fi/hinnasto</ns0:loc>
+        <ns0:priority>0.80</ns0:priority>
+        <html:link rel="alternate" hreflang="fi" href="https://www.nords.fi/hinnasto" />
+        <ns0:changefreq>monthly</ns0:changefreq>
+    </ns0:url>
+    <ns0:url>
+        <ns0:loc>https://www.nords.fi/tyot</ns0:loc>
+        <ns0:priority>0.80</ns0:priority>
+        <html:link rel="alternate" hreflang="fi" href="https://www.nords.fi/tyot" />
+        <ns0:changefreq>monthly</ns0:changefreq>
+    </ns0:url>
+    <ns0:url>
+        <ns0:loc>https://www.nords.fi/blogi</ns0:loc>
+        <ns0:priority>0.80</ns0:priority>
+        <html:link rel="alternate" hreflang="fi" href="https://www.nords.fi/blogi" />
+        <ns0:changefreq>monthly</ns0:changefreq>
+    </ns0:url>
+    <ns0:url>
+        <ns0:loc>https://www.nords.fi/ota-yhteytta</ns0:loc>
+        <ns0:priority>0.80</ns0:priority>
+        <html:link rel="alternate" hreflang="fi" href="https://www.nords.fi/ota-yhteytta" />
+        <ns0:changefreq>monthly</ns0:changefreq>
+    </ns0:url>
+    <ns0:url>
+        <ns0:loc>https://www.nords.fi/tietosuojaseloste</ns0:loc>
+        <ns0:priority>0.60</ns0:priority>
+        <html:link rel="alternate" hreflang="fi" href="https://www.nords.fi/tietosuojaseloste" />
+        <ns0:changefreq>yearly</ns0:changefreq>
+    </ns0:url>
+    <ns0:url>
+        <ns0:loc>https://www.nords.fi/palveluehdot</ns0:loc>
+        <ns0:priority>0.60</ns0:priority>
+        <html:link rel="alternate" hreflang="fi" href="https://www.nords.fi/palveluehdot" />
+        <ns0:changefreq>yearly</ns0:changefreq>
+    </ns0:url>
+</ns0:urlset>
