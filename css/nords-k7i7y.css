@@ -1491,6 +1491,13 @@ strong {
   height: 100%;
 }
 
+.team-image.joose {
+  object-fit: contain;
+  object-position: 50% 0%;
+  background-color: #131313;
+  padding-top: 20px;
+}
+
 .products-grid {
   grid-column-gap: 30px;
   grid-row-gap: 30px;
@@ -2999,11 +3006,7 @@ strong {
     color: var(--black);
   }
 
-  .team-image-div {
-    height: 450px;
-  }
-
-  .image-2 {
+  .team-image-div, .image-2 {
     height: 500px;
   }
 }
