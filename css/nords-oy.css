@@ -541,6 +541,13 @@ figure {
   line-height: 150%;
 }
 
+.hero-btn-wrap {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  align-items: center;
+  display: flex;
+}
+
 .hero-thumb-info {
   background-color: #fff;
   border-radius: 20px;
@@ -2773,6 +2780,14 @@ figure {
   height: 10px;
 }
 
+.space._60 {
+  height: 60px;
+}
+
+.space._42 {
+  height: 42px;
+}
+
 .button-wrapper {
   justify-content: space-between;
   padding-top: 20px;
@@ -4146,6 +4161,12 @@ figure {
 
   .hero-title {
     font-size: 42px;
+  }
+
+  .hero-btn-wrap {
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .hero-thumb-info {
