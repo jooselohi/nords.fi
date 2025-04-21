@@ -2096,6 +2096,7 @@ figure {
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
+  margin-bottom: 24px;
   display: grid;
 }
 
