@@ -5,6 +5,12 @@
   --transparent: #0000;
 }
 
+.w-layout-hflex {
+  flex-direction: row;
+  align-items: flex-start;
+  display: flex;
+}
+
 body {
   color: var(--body-color);
   font-family: Inter, sans-serif;
@@ -2964,6 +2970,11 @@ figure {
   margin-top: 4px;
   font-size: 18px;
   font-weight: 500;
+}
+
+.button-flex-center {
+  justify-content: center;
+  align-items: flex-start;
 }
 
 @media screen and (min-width: 1280px) {
