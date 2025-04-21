@@ -1216,7 +1216,7 @@ figure {
   width: 100%;
   max-width: 179px;
   position: absolute;
-  inset: -7% -8% auto auto;
+  inset: -10px -50px auto auto;
 }
 
 .services-thumb {
@@ -4250,6 +4250,11 @@ figure {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     flex-flow: row;
+  }
+
+  .services-thumb-wrap {
+    top: 0;
+    right: -40px;
   }
 
   .mission-title {
