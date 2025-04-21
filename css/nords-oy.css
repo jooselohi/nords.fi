@@ -279,6 +279,11 @@ figure {
   width: 100%;
 }
 
+.btn-wrap.small {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
 .blog-rich-text h1 {
   letter-spacing: -.06em;
   margin-bottom: 16px;
@@ -2977,6 +2982,17 @@ figure {
   align-items: flex-start;
 }
 
+.div-block-2 {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto;
+  grid-template-columns: 2fr 1fr;
+  grid-auto-columns: 1fr;
+  justify-content: space-between;
+  align-items: center;
+  display: grid;
+}
+
 @media screen and (min-width: 1280px) {
   .hero-content {
     padding-top: 220px;
@@ -4597,7 +4613,7 @@ figure {
   justify-self: start;
 }
 
-#w-node-_35a55d00-26ec-cb82-7bd1-12fcaf981a3d-af981a1a {
+#w-node-_35a55d00-26ec-cb82-7bd1-12fcaf981a3d-af981a1a, #w-node-_126aaeee-a723-6734-8842-5998c6dcc578-6226f583 {
   justify-self: end;
 }
 
