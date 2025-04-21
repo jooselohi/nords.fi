@@ -2945,6 +2945,12 @@ figure {
   margin-right: 60px;
 }
 
+.project-subtitle {
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 @media screen and (min-width: 1280px) {
   .hero-content {
     padding-top: 220px;
