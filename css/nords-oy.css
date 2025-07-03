@@ -823,6 +823,11 @@ figure {
   height: 32px;
 }
 
+.services-icon.larger {
+  width: 33px;
+  height: 33px;
+}
+
 .services-title-wrap {
   margin-bottom: 20px;
 }
@@ -4613,7 +4618,7 @@ figure {
   justify-self: start;
 }
 
-#w-node-_35a55d00-26ec-cb82-7bd1-12fcaf981a3d-af981a1a, #w-node-_126aaeee-a723-6734-8842-5998c6dcc578-6226f583 {
+#w-node-_35a55d00-26ec-cb82-7bd1-12fcaf981a3d-af981a1a {
   justify-self: end;
 }
 
