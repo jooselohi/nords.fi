@@ -1673,6 +1673,8 @@ figcaption {
 .hover-cursor__icon {
   justify-content: center;
   align-items: center;
+  width: 24px;
+  height: 24px;
   display: flex;
   overflow: hidden;
 }
@@ -12143,6 +12145,29 @@ figcaption {
   justify-content: space-between;
   align-items: center;
   display: flex;
+}
+
+.image-4 {
+  width: 21px;
+  margin-right: 8px;
+}
+
+.image-5 {
+  width: 12px;
+  margin-left: 10px;
+}
+
+.image-6 {
+  width: 14px;
+}
+
+.image-7 {
+  object-fit: contain;
+}
+
+.image-8 {
+  width: 20px;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 991px) {
