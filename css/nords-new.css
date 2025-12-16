@@ -12170,6 +12170,10 @@ figcaption {
   margin-right: 10px;
 }
 
+.image-9 {
+  width: 18px;
+}
+
 @media screen and (max-width: 991px) {
   body {
     --_typography---body--md: 1.125rem;
