@@ -13622,6 +13622,12 @@ figcaption {
   .about__txt {
     flex-flow: column;
   }
+
+  .arrow-icon-mobile:where(.w-variant-776b48b3-ed80-87d6-4e90-30f7e8ddc7b3) {
+    object-fit: contain;
+    width: 14px;
+    height: 14px;
+  }
 }
 
 #w-node-ae96847a-1d03-ee02-5a2c-63dabd125452-bfc79103 {
