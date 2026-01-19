@@ -1236,7 +1236,7 @@ figcaption {
   grid-column-gap: 0rem;
   grid-row-gap: 0rem;
   background-color: var(--_theme---background--primary);
-  min-height: 95svh;
+  min-height: 90svh;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -9704,7 +9704,7 @@ figcaption {
   aspect-ratio: 4;
   filter: invert();
   object-fit: contain;
-  height: 30px;
+  height: 27px;
 }
 
 .divider-2 {
@@ -10365,6 +10365,10 @@ figcaption {
 
   .display-body--md {
     line-height: 1.4;
+  }
+
+  .display-heading--md.margin-bottom-mobile {
+    margin-bottom: 2rem;
   }
 
   .footer-small__row {
