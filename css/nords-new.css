@@ -1467,8 +1467,8 @@ figcaption {
 }
 
 .footer__links {
-  grid-column-gap: var(--spacing--0-5-rem);
-  grid-row-gap: var(--spacing--0-5-rem);
+  grid-column-gap: var(--spacing--0-75-rem);
+  grid-row-gap: var(--spacing--0-75-rem);
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -9549,8 +9549,8 @@ figcaption {
 
 .live-chat-message.nords {
   aspect-ratio: 3 / 4;
+  border: 2px solid var(--_color---brand--brand-01);
   background-color: var(--_color---brand--neutral--neutral-07);
-  border-style: none;
   border-radius: 12px;
   position: relative;
   overflow: hidden;
@@ -9563,7 +9563,7 @@ figcaption {
 
 .live-chat-logo---brix {
   object-fit: contain;
-  padding: 17px;
+  padding: 18px;
 }
 
 .live-chat-wrapper {
