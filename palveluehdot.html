@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  Last Published: Thu Mar 19 2026 11:51:39 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Sun Mar 22 2026 10:30:47 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="69342031af17f8cbbfc791f4" data-wf-site="6934202faf17f8cbbfc79092" lang="fi">
 <head>
   <meta charset="utf-8">
@@ -205,88 +205,163 @@
           </div>
         </section>
       </div>
-      <div class="live-chat-wrapper preview-page">
-        <div class="live-chat-content">
-          <div class="live-chat-content-right">
-            <div class="live-chat-message nords">
-              <div class="background-video w-embed w-script">
-                <div class="video-container" style="position: relative; width: 100%; line-height: 0; border-radius: 12px; overflow: hidden; background: #000;">
-                  <video id="introVideo" autoplay="" muted="" loop="" playsinline="" style="width: 100%; height: auto; display: block; cursor: pointer;">
-                    <source src="https://www.nords.fi/videos/nords-intro.mp4" type="video/mp4">
-                  </video>
-                  <button id="playBtn" style="
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    margin: 0; padding: 0;
-    background: rgba(0, 0, 0, 0.6); 
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 50%; 
-    width: 70px; 
-    height: 70px; 
-    cursor: pointer; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-    z-index: 10;
-    transition: all 0.2s ease;">
-                    <div id="iconContainer">
-                      <svg id="playIcon" width="32" height="32" viewbox="0 0 24 24" fill="white" style="margin-left: 4px;">
-                        <path d="M8 5V19L19 12L8 5Z"></path>
-                      </svg>
-                    </div>
-                  </button>
+      <div class="video-popup">
+        <div class="popup">
+          <div class="video-cover">
+            <div class="exit-wrapper">
+              <div class="exit-wrapper-icon">X</div>
+            </div>
+            <a href="https://wa.me/358402469419" target="_blank" class="video-button w-inline-block"><img loading="lazy" src="images/whatsapp-ikoni.svg" alt="WhatsApp ikoni" class="popup-image">
+              <div>Lähetä viesti</div>
+            </a>
+            <a href="tel:+358402469419" class="video-button second w-button">Soita 040 2469419</a>
+            <div class="player-with-controls w-embed">
+              <div class="video-container">
+                <video id="popup-video" playsinline="" loop="" muted="" preload="auto">
+                  <source src="https://nords.fi/videos/nords-intro.mp4" type="video/mp4">
+                </video>
+                <div id="video-control-button" class="video-control-overlay">
+                  <div id="video-icon-shape" class="icon-play"></div>
                 </div>
-                <script>
-  const video = document.getElementById('introVideo');
-  const btn = document.getElementById('playBtn');
-  const iconContainer = document.getElementById('iconContainer');
-  // Icons as Strings for light swapping
-  const playIcon = '<svg width="32" height="32" viewBox="0 0 24 24" fill="white" style="margin-left: 4px;"><path d="M8 5V19L19 12L8 5Z" /></svg>';
-  const pauseIcon = '<svg width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M6 19H10V5H6V19ZM14 5V19H18V5H14Z" /></svg>';
-  function togglePlay() {
-    if (video.muted) {
-      // First click: Unmute and restart
-      video.muted = false;
-      video.currentTime = 0;
-      video.play();
-      iconContainer.innerHTML = pauseIcon;
-      // Fade button out slightly after unmuting
-      btn.style.opacity = "0"; 
-    } else {
-      // Subsequent clicks: Standard Pause/Play
-      if (video.paused) {
-        video.play();
-        iconContainer.innerHTML = pauseIcon;
-        btn.style.opacity = "0";
-      } else {
-        video.pause();
-        iconContainer.innerHTML = playIcon;
-        btn.style.opacity = "1";
-      }
-    }
-  }
-  // Click events for both button and video area
-  btn.addEventListener('click', togglePlay);
-  video.addEventListener('click', togglePlay);
-  // Show button when video is hovered or paused
-  video.addEventListener('mouseenter', () => { if(!video.muted) btn.style.opacity = "1"; });
-  video.addEventListener('mouseleave', () => { if(!video.paused && !video.muted) btn.style.opacity = "0"; });
-</script>
               </div>
-              <div class="popup-link-flex">
-                <a href="https://wa.me/358402469419" target="_blank" class="link-block w-inline-block"><img src="images/whatsapp-ikoni.svg" loading="lazy" alt="WhatsApp ikoni" class="popup-image">
-                  <div>Laita viestiä WhatsApissa</div>
-                </a>
-                <a href="tel:+358402469419" class="link-block w-inline-block"><img src="images/puhelin.svg" loading="lazy" alt="Puhelin ikoni" class="popup-image invert">
-                  <div>Soita 040 2469419</div>
-                </a>
-              </div>
+              <style>
+.video-container {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  background: #000;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  display: block !important;
+}
+#popup-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+video::-webkit-media-controls { display: none !important; }
+/* OVERLAY WITH YOUR CUSTOM COLOR */
+.video-control-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px; /* Slightly smaller circle */
+  height: 60px;
+  background-color: rgba(45, 194, 149, 0.4); /* Your custom green */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 5;
+  backdrop-filter: blur(2px); /* Optional: adds a nice glass effect */
+}
+.video-container:hover .video-control-overlay {
+  opacity: 1;
+}
+/* SMALLER, PADDED ICONS */
+.icon-play {
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 18px solid white; 
+  position: relative;
+  left: 3px; /* Optically centered */
+}
+.icon-pause {
+  display: flex;
+  width: 18px; /* Narrower width for smaller look */
+  height: 22px;
+  justify-content: space-between;
+}
+.icon-pause::before,
+.icon-pause::after {
+  content: "";
+  display: block;
+  width: 6px; /* Thinner bars */
+  height: 100%;
+  background-color: white;
+  border-radius: 1px;
+}
+</style>
             </div>
           </div>
         </div>
-        <div data-w-id="664ddd0c-1694-5dc5-8160-f9a8b0708e1f" class="live-chat-bubbble---brix"><img alt="Pikselöity, vinoviivainen kuvio, jossa on tummanvihreitä raitoja valkoisella taustalla, luoden abstraktin ja graafisen vaikutelman." src="images/vihrea-valkoinen-kuvio.jpg" class="live-chat-logo---brix"><img alt="Sulje ikoni" src="images/sulje-ikoni.svg" class="live-chat-close-icon---brix"></div>
+        <div data-w-id="572e95c8-8dcd-8f2e-4abf-1e65dd44cea0" class="close-badge-wrapper">
+          <div class="close-badge-icon">X </div>
+        </div>
+        <div data-w-id="572e95c8-8dcd-8f2e-4abf-1e65dd44cea3" class="badge">
+          <div class="outer-border"></div>
+          <div class="video-cover-badge">
+            <div class="badge-video w-embed">
+              <div class="video-cover-badge">
+                <video width="100%" height="100%" autoplay="" muted="" playsinline="" loop="" style="object-fit: cover; background: transparent;">
+                  <source src="https://nords.fi/videos/nords-intro.mp4" type="video/mp4">
+                  Your browser doesn't support HTML5 video.
+                </video>
+              </div>
+              <style>
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.video-cover video, .video-cover-badge video {
+  object-fit: cover;
+}
+</style>
+            </div>
+          </div>
+          <div class="badge-text-wrapper">
+            <div class="code-embed w-embed"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 459 459" style="enable-background:new 0 0 459 459;" xml:space="preserve" width="auto" height="auto" xmlns:svgjs="http://svgjs.dev/svgjs">
+                <g width="100%" height="100%" transform="matrix(1,0,0,1,0,0)">
+                  <g>
+                    <g>
+                      <path d="M229.5,0C102.751,0,0,102.751,0,229.5S102.751,459,229.5,459S459,356.249,459,229.5S356.249,0,229.5,0z M310.292,239.651&#10;&#9;&#9;&#9;l-111.764,76.084c-3.761,2.56-8.63,2.831-12.652,0.704c-4.022-2.128-6.538-6.305-6.538-10.855V153.416&#10;&#9;&#9;&#9;c0-4.55,2.516-8.727,6.538-10.855c4.022-2.127,8.891-1.857,12.652,0.704l111.764,76.084c3.359,2.287,5.37,6.087,5.37,10.151&#10;&#9;&#9;&#9;C315.662,233.564,313.652,237.364,310.292,239.651z" fill="#ffffff" fill-opacity="1" data-original-color="#000000ff" stroke="none" stroke-opacity="1"></path>
+                    </g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                </g>
+              </svg></div>
+            <div class="badge-text">Moi!</div>
+          </div>
+        </div>
       </div>
     </main>
     <div class="aside">
@@ -693,5 +768,37 @@
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6934202faf17f8cbbfc79092" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/nords-new.js" type="text/javascript"></script>
+  <script>$(document).ready(function() {
+  // Use the ID from your Embed to find the video
+  const v = document.getElementById('popup-video');
+  const icon = $('#video-icon-shape');
+  // 1. SMART CLICK: Find the Badge by its class name
+  // Change '.badge' if your class name is different in the new project
+  $('.badge').on('click', function() {
+    v.muted = false; // Unmute
+    v.volume = 1.0;  // Ensure volume is up
+    // Tiny delay to ensure Webflow's "Display: Block" transition has started
+    setTimeout(() => { 
+      v.play().catch(error => console.log("Autoplay prevented:", error)); 
+    }, 200);
+    icon.removeClass('icon-play').addClass('icon-pause');
+  });
+  // 2. Play/Pause Toggle
+  $('.video-container').on('click', function() {
+    if (v.paused) {
+      v.play();
+      icon.removeClass('icon-play').addClass('icon-pause');
+    } else {
+      v.pause();
+      icon.removeClass('icon-pause').addClass('icon-play');
+    }
+  });
+  // 3. Reset on Close (Using class names)
+  $('.exit-wrapper, .close-badge-wrapper').on('click', function() {
+    v.pause();
+    v.currentTime = 0;
+    icon.removeClass('icon-pause').addClass('icon-play');
+  });
+});</script>
 </body>
 </html>

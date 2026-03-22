@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  Last Published: Thu Mar 19 2026 11:51:39 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Sun Mar 22 2026 10:30:47 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="69342031af17f8cbbfc79271" data-wf-site="6934202faf17f8cbbfc79092" lang="fi">
 <head>
   <meta charset="utf-8">
@@ -600,5 +600,37 @@
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6934202faf17f8cbbfc79092" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/nords-new.js" type="text/javascript"></script>
+  <script>$(document).ready(function() {
+  // Use the ID from your Embed to find the video
+  const v = document.getElementById('popup-video');
+  const icon = $('#video-icon-shape');
+  // 1. SMART CLICK: Find the Badge by its class name
+  // Change '.badge' if your class name is different in the new project
+  $('.badge').on('click', function() {
+    v.muted = false; // Unmute
+    v.volume = 1.0;  // Ensure volume is up
+    // Tiny delay to ensure Webflow's "Display: Block" transition has started
+    setTimeout(() => { 
+      v.play().catch(error => console.log("Autoplay prevented:", error)); 
+    }, 200);
+    icon.removeClass('icon-play').addClass('icon-pause');
+  });
+  // 2. Play/Pause Toggle
+  $('.video-container').on('click', function() {
+    if (v.paused) {
+      v.play();
+      icon.removeClass('icon-play').addClass('icon-pause');
+    } else {
+      v.pause();
+      icon.removeClass('icon-pause').addClass('icon-play');
+    }
+  });
+  // 3. Reset on Close (Using class names)
+  $('.exit-wrapper, .close-badge-wrapper').on('click', function() {
+    v.pause();
+    v.currentTime = 0;
+    icon.removeClass('icon-pause').addClass('icon-play');
+  });
+});</script>
 </body>
 </html>
