@@ -1682,6 +1682,10 @@ textarea.w-select {
 .w--nav-dropdown-list-open {
   position: static;
 }
+/**
+ * NOTE: These rules are overridden in site-designer.less to use container queries instead of media queries
+ * when the navbar is inside a Frame on the Open Canvas.
+ */
 @media screen and (max-width: 991px) {
   .w-nav[data-collapse='medium'] .w-nav-menu {
     display: none;

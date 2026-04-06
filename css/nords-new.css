@@ -1535,6 +1535,10 @@ figcaption {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
+.grid.grid--6-col.custom-pricing-grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .grid.grid--1-col {
   grid-template-columns: 1fr;
 }
