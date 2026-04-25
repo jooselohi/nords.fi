@@ -107,6 +107,9 @@ html[data-w-dynpage] [data-w-cloak] {
 pre.w-code-block code {
   all: inherit;
 }
+pre.w-code-block code > span {
+  display: block !important;
+}
 .w-optimization {
   display: contents;
 }
