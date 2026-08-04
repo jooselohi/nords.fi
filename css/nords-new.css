@@ -29,9 +29,9 @@
   --_typography---body--sm: 1rem;
   --spacing--1-5-rem: 1.5rem;
   --spacing--0-5-rem: .5rem;
+  --_color---brand--brand-01: #010c0a;
   --spacing--1-rem: 1rem;
   --spacing--0-125-rem: .125rem;
-  --_color---brand--brand-01: #010c0a;
   --_typography---body--lg: 1.25rem;
   --_typography---body--xs: .875rem;
   --spacing--0-25-rem: .25rem;
@@ -382,7 +382,8 @@ label {
 }
 
 strong {
-  font-weight: bold;
+  color: var(--_color---brand--brand-01);
+  font-weight: 700;
 }
 
 blockquote {
